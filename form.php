@@ -13,11 +13,11 @@
 			</tr>
 			<tr>
 				<td>Username</td>
-				<td><input type="text" name="id"></td>
+				<td><input type="text" name="username"></td>
 			</tr>
 			<tr>
 				<td>Password</td>
-				<td><input type="text" name="id"></td>
+				<td><input type="password" name="password"></td>
 			</tr>
 			<tr>
 				<td style="vertical-align: top">level</td>
@@ -29,7 +29,10 @@
 			</tr>
 			<tr>
 				<td>Fullname</td>
-				<td><input type="text" name="simpan">Simpan</button></td>
+				<td><input type="text" name="fullname"></td>
+			</tr>
+			<tr>
+				<td><button type="submit" value="simpan">Simpan</button></td>
 			</tr>
 		</table>
 	</form>

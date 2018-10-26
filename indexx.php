@@ -16,12 +16,13 @@ function query($query) {
 $students = query("SELECT * FROM user");	
 ?>
 
-
+<!DOCTYPE html>
 <html>
 	<head>
 		<title></title>
 	</head>
 	<body>
+		<a href="form.php">Simpan</a>
 		<table border="1px" cellpadding="10" cellspacing="0">
 	 		<tr>
 	 			<td bgcolor="#D6D8DC" align="center">Id</td>
@@ -35,6 +36,10 @@ $students = query("SELECT * FROM user");
 				 	<td><?= $student["username"] ?></td>
 				 	<td><?= $student["level"] ?></td>
 				 	<td><?= $student["fullname"] ?></td>
+				 	<td align="center">
+				 		<a href="edit.php?id=<?php echo $data ['id']; ?>">Edit</a>
+				 		<a href="delete.php?id=<?php echo $data ['id']; ?>">Hapus</a>
+				 	</td>
 				 </tr>
 				<?php endforeach; ?>
 	 	</table>
