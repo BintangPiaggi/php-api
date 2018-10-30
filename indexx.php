@@ -29,6 +29,7 @@ $students = query("SELECT * FROM user");
 	 			<td bgcolor="#D6D8DC" align="center">Username</td>
 	 			<td bgcolor="#D6D8DC" align="center">Level</td>
 	 			<td bgcolor="#D6D8DC" align="center">Fullname</td>
+	 			<td bgcolor="#D6D8DC" align="center">Action</td>
 	 		</tr>
 	 		<?php foreach($students as $student) : ?>
 				 <tr>
@@ -37,8 +38,8 @@ $students = query("SELECT * FROM user");
 				 	<td><?= $student["level"] ?></td>
 				 	<td><?= $student["fullname"] ?></td>
 				 	<td align="center">
-				 		<a href="edit.php?id=<?php echo $data ['id']; ?>">Edit</a>
-				 		<a href="delete.php?id=<?php echo $data ['id']; ?>">Hapus</a>
+				 		<a href="edit.php?id=<?php echo $student ['id']; ?>">Edit</a>
+				 		<a href="delete.php?id=<?php echo $student ['id']; ?>">Hapus</a>
 				 	</td>
 				 </tr>
 				<?php endforeach; ?>
